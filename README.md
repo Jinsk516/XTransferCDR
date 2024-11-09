@@ -10,6 +10,8 @@
 
 ![framework](framework.png)
 
+The gene expression profiles $$X^{(a)}$$ and $$X^{(b)}$$ of a sample cell $$X$$ under perturbations $$a$$ and $$b$$, represented as vector-type data, serve as inputs. These inputs are decoupled by the cell state feature extractor $$E_S$$ and the perturbation feature extractor $$E_P$$, resulting in cell state feature embedding vectors $$S^a$$ and $$S^b$$ for cell $$X$$, as well as perturbation feature embedding vectors $$P^a$$ and $$P^b$$ for perturbations $$a$$ and $$b$$. These embedding vectors undergo cross-transfer and combination, yielding $$P^a + S^a$$, $$P^b + S^a$$, $$P^a + S^b$$, and $$P^b + S^b$$, which are subsequently fed into the decoder $$D$$ to produce the corresponding reconstructed gene expression profiles.
+
 ## Requirements
 
 The deep learning models were trained on 2*NVIDIA GeForce RTX 4090 on linux.
